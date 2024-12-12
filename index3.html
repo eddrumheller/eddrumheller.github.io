@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2d94b2">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<meta charset="utf-8" />
+	<title>ed drumheller</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,300;1,400;1,800&display=swap" rel="stylesheet">
+<style>
+/* * { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+* * * * * * * { background-color: rgba(255,0,0,.2); }
+* * * * * * * * { background-color: rgba(0,255,0,.2); }
+* * * * * * * * * { background-color: rgba(0,0,255,.2); }*/
+
+@media (min-width: 800px) {
+    .logo{width:180px;float:left;text-align:left;font-weight:100;}
+    .content h2 {font-size: 1.2em;font-weight:800;margin:0.3em 0;}
+    .container{margin:auto;padding:2em;min-width: 700px;}
+    .site span {font-size: 2.25em;line-height:1.5em;}
+    svg {transform: scale(0.8);}
+    .logo p{margin: 1em;}
+    .gutter-right{float:left;}
+    .content span h2 br{display:none;}
+}
+@media (min-width: 400px) and (max-width: 799px) {
+    .logo{width:120px;float:left;text-align:left;font-weight:100;}
+    .content h2 {font-size: 1.0em !important;font-weight:800;margin:0.3em 0;}
+    .container{margin:auto;padding:1em;max-width:799px;min-width:400px;}
+    .site span {font-size: 1.85em;line-height:1.2em;}
+    svg {transform: scale(0.8);}
+    .logo p{margin: 0.8em;}
+    .gutter-right{float:left;}
+}
+@media (min-width: 100px) and (max-width: 399px) {
+    .logo{width:80px;float:left;text-align:left;font-weight:100;}
+    .content h2 {font-size: 1.75em;line-height:1em;font-weight:800;margin:0.3em 0;}
+    .floatnone{float:right;}
+    .container{margin:auto;padding:0em;max-width:399px;min-width:200px;}
+    .site span {font-size: 1.125em;line-height:0.8em;}
+    svg {transform: scale(0.8);}
+    .logo p{margin: 0.5em;display:none;}
+    .gutter-right, .gutter-top {display:none}
+    .content i {font-size:0.75em;}
+}
+
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+}
+::selection {
+  background: #000;
+  color: #fff;
+}
+a:link{color:#000;text-decoration:underline;text-decoration-thickness: 0.1em;text-decoration-color:#333;}
+a:visited{color:#333;text-decoration: underline;}
+a:hover{color:#666;text-decoration: none;}
+a:active{color:white;background:#ccc;text-decoration: none;}
+
+.arrow{
+	text-align: center;
+	font-size: 2em;
+	font-weight:800;
+
+}
+
+.logo svg{
+	text-align: center;
+}
+
+.logo a:link{font-style: italic;color:#000;text-decoration:none;text-decoration-thickness: 0.1em;text-decoration-color:#333;}
+.logo a:visited{font-style: italic;color:#333;text-decoration: none;}
+.logo a:hover{font-style:italic;color:#666;text-decoration: underline dotted;}
+.logo a:active{font-style: italic;color:white;background:#ccc;text-decoration: none;}
+.gutter-right{
+	float:left;
+	margin-top: 7.2em;
+}
+.gutter-top{
+	text-align:center;
+}
+.site {
+	display: flow-root;
+	
+}	
+.content{
+	text-align: left;
+	display: table;
+	padding: 1em;
+
+}	
+.content sup {
+	font-size: 0.3em;
+	color:gray;
+	margin: 0 0.3em;
+}
+.content a {
+	font-weight:bold;
+}
+#length {
+	text-align: center;
+	font-size: 1em;
+	margin: 1em 0em 0em 0em;
+}
+.center{
+  text-align: center;
+}
+.horizontalRule{
+  margin: 0.33em auto 0.30em auto;
+  border-top: 0.085em #eee solid;
+  width: 30%;
+  font-size: 1.5em;
+}
+.footer {
+	font-size: 0.6em;
+	text-align: center;
+}
+.footer a:link{color:inherent;text-decoration: none;}
+.footer a:visited{color:#333;text-decoration: none;}
+.footer a:hover{color:#666;text-decoration: underline;}
+.footer a:active{color:white;background:#ccc;text-decoration: none;}
+.footer a {font-weight:bold;}
+.footer span {
+	font-size: 1.25em;
+	margin: 0;
+}
+.footer span {
+	font-size: 1.4em;
+}
+.footer p {
+	color: #333;
+	margin:0;
+}
+.red{background-color: red;text-align:center;}.blue{background-color: blue;}.green{background-color: green;}.purple{background-color: purple;}.orange{background-color: orange;}.yellow{background-color: yellow;}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="site">
+		<div class="logo">
+			<svg version="1.0" xmlns="https://www.w3.org/2000/svg"
+			 viewBox="0 0 476.000000 876.000000"
+			 preserveAspectRatio="xMidYMid meet">
+			<g transform="translate(0.000000,876.000000) scale(0.100000,-0.100000)"
+			fill="#000" stroke="none">
+			<path d="M3350 8431 c-111 -37 -210 -110 -308 -228 -104 -124 -183 -277 -274
+			-528 -22 -60 -47 -115 -55 -122 -8 -6 -23 -53 -33 -105 -10 -51 -32 -147 -48
+			-213 -80 -316 -139 -710 -174 -1155 -21 -262 -17 -1197 5 -1480 47 -591 122
+			-1152 225 -1683 l29 -149 -36 -56 c-20 -31 -59 -95 -85 -142 -50 -86 -175
+			-262 -196 -275 -6 -4 -15 -17 -20 -30 -26 -68 -543 -784 -784 -1085 -259 -325
+			-533 -617 -701 -750 -74 -58 -183 -120 -212 -120 -16 0 -17 111 -3 230 21 166
+			193 929 306 1355 203 763 498 1648 753 2252 32 77 120 248 194 380 230 407
+			327 615 327 702 0 39 -6 56 -26 81 -77 91 -180 80 -251 -27 -54 -79 -175 -290
+			-258 -448 -312 -594 -544 -1004 -820 -1445 -149 -238 -432 -646 -442 -637 -2
+			3 3 74 12 158 17 165 93 523 231 1094 124 512 223 877 435 1606 180 621 208
+			766 161 855 -25 50 -78 79 -125 70 -108 -22 -239 -201 -388 -531 -179 -397
+			-382 -1133 -495 -1795 -20 -113 -36 -206 -37 -207 -5 -5 -170 1159 -192 1351
+			-25 226 -31 256 -45 256 -15 0 -17 -45 -9 -206 5 -87 13 -274 19 -414 12 -301
+			41 -742 75 -1145 13 -159 31 -383 40 -497 l15 -207 -35 -150 c-81 -342 -85
+			-532 -16 -630 20 -28 23 -49 32 -253 5 -123 14 -241 20 -262 29 -107 152 -143
+			239 -70 54 46 62 101 59 375 l-3 239 60 62 c80 82 214 243 327 395 51 66 93
+			120 94 119 2 -2 -17 -57 -42 -124 -258 -704 -527 -1646 -591 -2072 -24 -160
+			-24 -385 0 -469 50 -180 159 -278 322 -289 131 -8 253 47 484 221 108 81 540
+			507 701 692 237 271 719 869 719 890 0 4 24 39 53 79 30 39 67 91 82 116 64
+			102 163 217 175 203 4 -4 24 -71 45 -148 82 -307 194 -640 270 -800 56 -117
+			114 -175 176 -175 37 0 48 6 85 45 49 50 60 82 75 215 23 201 -43 713 -207
+			1613 -41 224 -78 427 -83 450 -49 219 -239 1235 -296 1577 -25 151 -47 288
+			-50 303 -3 16 0 108 5 205 44 775 158 1427 341 1960 84 243 205 503 269 575
+			59 66 91 66 153 -3 179 -199 314 -789 381 -1670 43 -558 55 -974 50 -1660 -7
+			-937 -47 -1700 -164 -3130 -34 -426 -41 -869 -16 -1037 17 -116 41 -171 88
+			-206 101 -76 234 -44 292 71 27 53 68 178 91 279 21 90 52 313 54 388 1 33 30
+			415 66 850 77 949 92 1329 81 2115 -8 655 -29 1125 -71 1630 -125 1468 -335
+			2326 -644 2629 -69 68 -160 127 -225 146 -67 20 -188 18 -256 -4z"/>
+			</g>
+			</svg>
+			<div>
+				<p class="gutter-top">
+					<svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier"><path d="M849.973.011v1497.931L486.9 1134.871 331 1290.772 960.228 1920l629.228-629.228-155.901-155.901-363.071 363.071V.011z" fill-rule="evenodd"></path></g>
+					</svg>
+				</p>
+				<p><a href="https://www.youtube.com/watch?v=xd5tpFX3_xA&t=28s" alt="🐰🥚">A bimonthly, curated, box of snacks</a></p>
+				<!-- <p class="gutter-top">
+					<svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+						<g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+						<g id="SVGRepo_iconCarrier"> <path d="M849.973.011v1497.931L486.9 1134.871 331 1290.772 960.228 1920l629.228-629.228-155.901-155.901-363.071 363.071V.011z" fill-rule="evenodd"></path></g>
+					</svg>
+				</p>
+				<p><a href="https://www.youtube.com/watch?v=xd5tpFX3_xA&t=28s" alt="🐰🥚">Enshitification</a></p>-->
+			
+			</div>
+		</div>
+		<div class="gutter-right">
+			<svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier"> <path d="M1290.761 331.004 1134.86 486.905l363.071 363.071H0v220.511h1497.931l-363.071 363.071 155.901 155.902 629.228-629.228z" fill-rule="evenodd"></path> </g>
+			</svg>
+		</div>
+		<div class="content">
+			<span>
+				<h2><i>Hi! My Name is..<a href="https://www.youtube.com/watch?v=Z0c9-R4lPlY" alt="🐰🥚">.</a></i><br>Ed Drumheller</h2>
+            </span>
+        </div>
+        <div class="content floatnone">
+            <span>
+				I'm on <a href="https://github.com/eddrumheller" alt="GitHub">GitHub</a>, where I made <a href="https://eddrumheller.com/PasswdGen/" alt="PasswdGen">PasswdGen</a> 
+				and follow some great <a href="https://github.com/eddrumheller?tab=stars" alt="Followed">projects</a>;
+				Listen to a <a href="https://www.last.fm/user/eddrumheller" alt="Last.fm">variety</a> of music;
+				Curate >5K <a href="https://unsplash.com/@eddrumheller/likes" alt="Unsplash">wallpaper</a>;
+				Early Adopter <a href="https://staging.bsky.app/profile/edd.bsky.social">Bluesky</a> & <a href="https://mastodon.social/@eddrumheller">Mastodon</a>
+			</span>
+		</div>
+	</div>
+	<div class="center">
+			<svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M849.973.011v1497.931L486.9 1134.871 331 1290.772 960.228 1920l629.228-629.228-155.901-155.901-363.071 363.071V.011z" fill-rule="evenodd"></path> </g></svg>
+			<div class="horizontalRule"></div>
+	</div>
+	<div class="footer">
+			<span>
+				<span><a href="https://www.youtube.com/watch?v=lv5uiDbbWv0" alt="🐰🥚">😃</a></span> things from <a href="https://eddrumheller.com/" alt="That's Me!">Ed Drumheller</a> &copy;2006-<script>document.write(new Date().getFullYear());</script>
+			</span>
+			<p>
+				
+			</p>
+		</div>
+	
+</div>
+</body>
+</html>
