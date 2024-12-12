@@ -8,57 +8,11 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ed drumheller</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,300;1,400;1,800&display=swap" rel="stylesheet">
 <style>
- * { background-color: rgba(255,0,0,.2); }
-* * { background-color: rgba(0,255,0,.2); }
-* * * { background-color: rgba(0,0,255,.2); }
-* * * * { background-color: rgba(255,0,255,.2); }
-* * * * * { background-color: rgba(0,255,255,.2); }
-* * * * * * { background-color: rgba(255,255,0,.2); }
-* * * * * * * { background-color: rgba(255,0,0,.2); }
-* * * * * * * * { background-color: rgba(0,255,0,.2); }
-* * * * * * * * * { background-color: rgba(0,0,255,.2); }
-
-@media screen and (min-width: 800px) {
-    .logo{width:180px;float:left;text-align:left;font-weight:100;}
-    .content h2 {font-size: 1.2em;font-weight:800;margin:0.3em 0;}
-    .container{margin:auto;padding:2em;min-width:800px;max-width:1000px}
-    .site span {font-size: 2.25em;line-height:1.5em;}
-    svg {transform: scale(0.8);}
-    .logo p{margin: 1em;}
-    .gutter-right{float:left;}
-    .content span h2 br{display:none;}
-    .footer {font-size: 0.6em;text-align: center;}
-}
-@media screen and (min-width: 500px) and (max-width: 799px) {
-    .logo{width:120px;float:left;text-align:left;font-weight:100;}
-    .content h2 {font-size: 1.0em !important;font-weight:800;margin:0.3em 0;}
-    .container{margin:auto;padding:1em;max-width:799px;min-width:500px;}
-    .site span {font-size: 1.85em;line-height:1.2em;}
-    svg {transform: scale(0.8);}
-    .logo p{margin: 0.8em;}
-    .gutter-right{float:left;}
-    .footer {font-size: 0.6em;text-align: center;}
-}
-@media screen and (min-width: 200px) and (max-width: 499px) {
-    .logo{width:80px;float:left;text-align:left;font-weight:100;}
-    .content h2 {font-size: 1.75em;line-height:1em;font-weight:800;margin:0.3em 0;}
-    .floatnone{float:right;}
-    .container{margin:auto;padding:0em;max-width:499px;min-width:200px;}
-    .site span {font-size: 1.6em;line-height:0.8em;}
-    svg {transform: scale(0.8);}
-    .logo{margin-bottom:-1.5em ;}
-    .logo p{margin: 0.5em;display:none;}
-    .gutter-right, .gutter-top, .gutter-bottom {display:none;}
-    .content i {font-size:0.75em;}
-    .footer {font-size: 0.5em;text-align: center;}
-}
-
 body {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
@@ -68,21 +22,35 @@ body {
   background: #000;
   color: #fff;
 }
+
 a:link{color:#000;text-decoration:underline;text-decoration-thickness: 0.1em;text-decoration-color:#333;}
 a:visited{color:#333;text-decoration: underline;}
 a:hover{color:#666;text-decoration: none;}
 a:active{color:white;background:#ccc;text-decoration: none;}
-
+.container{
+	margin:auto;
+	padding:2em;
+	max-width:1000px;
+	min-width: 600px;
+}
 .arrow{
 	text-align: center;
 	font-size: 2em;
 	font-weight:800;
-}
 
+}
+.logo{
+	width:180px;
+	float:left;
+	text-align:left;
+	font-weight:100;
+}
 .logo svg{
 	text-align: center;
 }
-
+.logo p{
+	margin: 1em;
+}
 .logo a:link{font-style: italic;color:#000;text-decoration:none;text-decoration-thickness: 0.1em;text-decoration-color:#333;}
 .logo a:visited{font-style: italic;color:#333;text-decoration: none;}
 .logo a:hover{font-style:italic;color:#666;text-decoration: underline dotted;}
@@ -98,11 +66,21 @@ a:active{color:white;background:#ccc;text-decoration: none;}
 	display: flow-root;
 	
 }	
-.content{text-align: left;
+.site span {
+	font-size: 2.25em;
+	line-height:1.5em;
+}
+.content{
+	text-align: left;
 	display: table;
 	padding: 1em;
 
 }	
+.content h2 {
+	font-size: 1.2em;
+	font-weight:800;
+	margin:0.3em 0;
+}
 .content sup {
 	font-size: 0.3em;
 	color:gray;
@@ -125,7 +103,10 @@ a:active{color:white;background:#ccc;text-decoration: none;}
   width: 30%;
   font-size: 1.5em;
 }
-
+.footer {
+	font-size: 0.6em;
+	text-align: center;
+}
 .footer a:link{color:inherent;text-decoration: none;}
 .footer a:visited{color:#333;text-decoration: none;}
 .footer a:hover{color:#666;text-decoration: underline;}
@@ -151,7 +132,7 @@ a:active{color:white;background:#ccc;text-decoration: none;}
 	<div class="site">
 		<div class="logo">
 			<svg version="1.0" xmlns="https://www.w3.org/2000/svg"
-			 viewBox="0 0 476.000000 876.000000"
+			 width="180px" height="180px" viewBox="0 0 476.000000 876.000000"
 			 preserveAspectRatio="xMidYMid meet">
 			<g transform="translate(0.000000,876.000000) scale(0.100000,-0.100000)"
 			fill="#000" stroke="none">
@@ -211,11 +192,7 @@ a:active{color:white;background:#ccc;text-decoration: none;}
 		</div>
 		<div class="content">
 			<span>
-				<h2><i>Hi! My Name is..<a href="https://www.youtube.com/watch?v=Z0c9-R4lPlY" alt="🐰🥚">.</a></i> <br>Ed Drumheller</h2>
-            </span>
-        </div>
-        <div class="content floatnone">
-            <span>
+				<h2><i>Hi! My Name is..<a href="https://www.youtube.com/watch?v=Z0c9-R4lPlY" alt="🐰🥚">.</a></i> Ed Drumheller</h2>
 				I'm on <a href="https://github.com/eddrumheller" alt="GitHub">GitHub</a>, where I made <a href="https://eddrumheller.com/PasswdGen/" alt="PasswdGen">PasswdGen</a> 
 				and follow some great <a href="https://github.com/eddrumheller?tab=stars" alt="Followed">projects</a>;
 				Listen to a <a href="https://www.last.fm/user/eddrumheller" alt="Last.fm">variety</a> of music;
@@ -225,12 +202,12 @@ a:active{color:white;background:#ccc;text-decoration: none;}
 		</div>
 	</div>
 	<div class="center">
-			<div class="gutter-bottom"><svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M849.973.011v1497.931L486.9 1134.871 331 1290.772 960.228 1920l629.228-629.228-155.901-155.901-363.071 363.071V.011z" fill-rule="evenodd"></path> </g></svg></div>
+			<svg fill="#000000" width="18px" height="18px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M849.973.011v1497.931L486.9 1134.871 331 1290.772 960.228 1920l629.228-629.228-155.901-155.901-363.071 363.071V.011z" fill-rule="evenodd"></path> </g></svg>
 			<div class="horizontalRule"></div>
 	</div>
 	<div class="footer">
 			<span>
-				<span><a href="https://www.youtube.com/watch?v=lv5uiDbbWv0" alt="🐰🥚">🤯</a></span> things from &copy;2006-<script>document.write(new Date().getFullYear());</script>
+				<span><a href="https://www.youtube.com/watch?v=lv5uiDbbWv0" alt="🐰🥚">😃</a></span> things from <a href="https://eddrumheller.com/" alt="That's Me!">Ed Drumheller</a> &copy;2006-<script>document.write(new Date().getFullYear());</script>
 			</span>
 			<p>
 				
